@@ -1,5 +1,9 @@
 # winoutt-admin
 
+### *UPDATE: This project is no longer maintained.*
+
+---
+
 ## Project setup
 ```
 npm install
