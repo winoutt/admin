@@ -1,0 +1,72 @@
+@import './variables'
+
+// Bootstrap required
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
+
+// Bootstrap optional
+@import '~bootstrap/scss/card'
+@import '~bootstrap/scss/forms'
+@import '~bootstrap/scss/buttons'
+@import '~bootstrap/scss/grid'
+@import '~bootstrap/scss/nav'
+@import '~bootstrap/scss/reboot'
+@import '~bootstrap/scss/root'
+@import '~bootstrap/scss/spinners'
+@import '~bootstrap/scss/tables'
+@import '~bootstrap/scss/tooltip'
+@import '~bootstrap/scss/type'
+@import '~bootstrap/scss/utilities'
+
+// Noty
+@import "~noty/src/noty.scss"
+@import "~noty/src/themes/mint.scss"
+
+// Nprogress
+@import '~nprogress/nprogress.css'
+
+body
+  height: 100vh
+
+.cursor-pointer
+  cursor: pointer
+
+.scroll
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  &::-webkit-scrollbar
+    width: 4px
+    height: 4px
+  &::-webkit-scrollbar-thumb
+    background-color: #c1cae3
+    border-radius: 5px
+
+svg 
+  fill: $grey-light
+
+.form-control, .form-control[disabled]
+  background: $secondary-light
+  color: $grey-light !important
+  border-color: $grey-dark !important
+  &:focus
+    box-shadow: none !important
+    border-color: $focus !important
+
+.actions
+  .icon
+    width: 20px
+    height: 20px
+  .icon-green
+    fill: green
+  .icon-red
+    fill: $primary
+.no-wrap
+  white-space: nowrap
+
+#nprogress
+  .bar
+    background: $primary !important
+    height: 3px !important
+  .peg
+    box-shadow: none !important
